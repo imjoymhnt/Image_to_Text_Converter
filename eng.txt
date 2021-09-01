@@ -1,0 +1,21 @@
+Many developers think of templates as being reusable renderable
+pieces of text, such as the capability provided by most template
+engines (Mustache, Handlebars, etc.). ES6’s use of the word template
+would imply something similar, like a way to declare inline template
+literals that can be re-rendered. However, that's not at all the right
+way to think about this feature.
+
+So, before we go on, I'm renaming it to what it should have been
+called: interpolated string literals (or interpoliterals for short).
+
+You're already well aware of declaring string literals with " or *
+delimiters, and you also know that these are not smart strings (as
+some languages have), where the contents would be parsed for inter-
+polation expressions.
+
+However, ES6 introduces a new type of string literal, using the *
+backtick as the delimiter. These string literals allow basic string
+
+interpolation expressions to be embedded, which are then automati-
+cally parsed and evaluated.
+
